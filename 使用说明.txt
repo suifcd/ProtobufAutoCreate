@@ -1,0 +1,7 @@
+1.将自己编写的proto文件放到ProtoFile目录下
+
+2.AssemblyInfo.cs 填写生成的Dll描述信息
+
+3.右键打开编辑build.bat，拉到最后填入自己的项目地址
+
+4.运行build.bat即可

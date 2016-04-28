@@ -1,0 +1,6 @@
+package PBMessage; 
+  
+message NestDTO 
+{  
+	required int32 result = 1; 
+}

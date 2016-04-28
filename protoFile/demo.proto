@@ -1,0 +1,51 @@
+package PBMessage; 
+  
+import "NestDTO.proto";
+message People 
+{  
+	required NestDTO nestDTO  = 1; 
+  	required int32 id = 2;  
+  	required string name = 3; 
+
+	required float height = 4; 
+	required bool isMan = 5;
+	required bytes bbb = 6;
+	required double speed = 7;
+
+	repeated int32 hhh = 9;
+}
+
+message People2
+{
+	required People pp = 1;  
+	required int64 id = 2; 
+	required uint32 id2 = 3; 
+	required uint64 id3 = 4; 
+	required sint32 id4 = 5; 
+	required sint64 id5 = 6;
+	required fixed32 id6 = 7;
+	required fixed64 id7 = 8;
+	required sfixed32 id8 = 9;
+	required sfixed64 id9 = 10;
+
+	enum eTest
+	{
+		Defaule = 0;
+		P1 = 1;
+		P2 = 2;
+	}
+	required eTest ee = 12;  
+
+}
+
+
+message Foo 
+{
+	required int32 id = 2;  
+  	extensions 100 to 199;
+}
+
+extend Foo 
+{
+  	required int32 bar = 126;
+}
