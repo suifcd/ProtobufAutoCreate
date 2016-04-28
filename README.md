@@ -1,5 +1,6 @@
 # ProtobufAutoCreate
 protobuf auto create csharp files and pack up to dlls
+自动生成proto文件的对应c#文件，自动打包成Dll文件，并将Dll拷贝到指定目录下
 
 改自别人的一个插件，使其更适用于自己的项目
 
